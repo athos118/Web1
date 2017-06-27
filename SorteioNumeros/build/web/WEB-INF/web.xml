@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Sorteio</servlet-name>
+        <servlet-class>Sorteio</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SortearLista</servlet-name>
+        <servlet-class>SortearLista</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResultadoLista</servlet-name>
+        <servlet-class>ResultadoLista</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Sorteio</servlet-name>
+        <url-pattern>/Sorteio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SortearLista</servlet-name>
+        <url-pattern>/SortearLista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResultadoLista</servlet-name>
+        <url-pattern>/ResultadoLista</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
